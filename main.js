@@ -13,12 +13,12 @@ togglerBtn.addEventListener("click", () => {
     togglerBtn.classList.remove("active");
     yearly = false;
     period.textContent = "/monthly";
-    price.textContent = "$" + pricesMonthly[2] + ".00";
+    price.textContent = "$" + pricesMonthly[sliderInput.value - 1] + ".00";
   } else {
     togglerBtn.classList.add("active");
     yearly = true;
     period.textContent = "/yearly";
-    price.textContent = "$" + pricesYearly[2] + ".00";
+    price.textContent = "$" + pricesYearly[sliderInput.value - 1] + ".00";
   }
 });
 
